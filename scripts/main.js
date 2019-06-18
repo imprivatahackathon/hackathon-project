@@ -33,7 +33,8 @@ if (!firebase.apps.length) {
 var messageForm = document.getElementById('message-form');
 var messageInput = document.getElementById('new-post-message');
 var titleInput = document.getElementById('new-post-title');
-var signInButton = document.getElementById('sign-in-button');
+var submitAnIdeaButton = document.getElementById('submit-an-idea');
+var viewProjectsButton = document.getElementById('view-projects');
 var signOutButton = document.getElementById('sign-out-button');
 var splashPage = document.getElementById('page-splash');
 var addPost = document.getElementById('add-post');
@@ -414,7 +415,7 @@ function showSection(sectionElement, buttonElement) {
 // Bindings on load.
 window.addEventListener('load', function() {
   // Bind Sign in button.
-  signInButton.addEventListener('click', function() {
+  viewProjectsButton.addEventListener('click', function() {
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider);
   });
