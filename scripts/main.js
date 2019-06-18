@@ -33,9 +33,6 @@ if (!firebase.apps.length) {
 var messageForm = document.getElementById('message-form');
 var messageInput = document.getElementById('new-post-message');
 var titleInput = document.getElementById('new-post-title');
-var submitAnIdeaButton = document.getElementById('submit-an-idea');
-var viewProjectsButton = document.getElementById('view-projects');
-var signOutButton = document.getElementById('sign-out-button');
 var splashPage = document.getElementById('page-splash');
 var addPost = document.getElementById('add-post');
 var addButton = document.getElementById('add');
@@ -391,41 +388,21 @@ function newPostForCurrentUser(title, text) {
   // [END single_value_read]
 }
 
-/**
- * Displays the given section element and changes styling of the given button.
- */
-function showSection(sectionElement, buttonElement) {
-  recentPostsSection.style.display = 'none';
-  userPostsSection.style.display = 'none';
-  topUserPostsSection.style.display = 'none';
-  addPost.style.display = 'none';
-  recentMenuButton.classList.remove('is-active');
-  myPostsMenuButton.classList.remove('is-active');
-  myTopPostsMenuButton.classList.remove('is-active');
-
-  if (sectionElement) {
-    sectionElement.style.display = 'block';
-  }
-  if (buttonElement) {
-    buttonElement.classList.add('is-active');
-  }
-}
-
 
 // Bindings on load.
 window.addEventListener('load', function() {
   // Bind Sign in button.
-  viewProjectsButton.addEventListener('click', function() {
+  $('#view-projects').on('click', function() {
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider);
   });
 
-  submitAnIdeaButton.addEventListener('click', function() {
+  $('#submit-an-idea').on('click', function() {
     $('#submitIdeaContainer').css("display", 'block');
   });
 
   // Bind Sign out button.
-  signOutButton.addEventListener('click', function() {
+  $('#sign-out-button').on('click', function() {
     firebase.auth().signOut();
   });
 
@@ -447,17 +424,17 @@ window.addEventListener('load', function() {
   };
 
   // Bind menu buttons.
-  recentMenuButton.onclick = function() {
-    showSection(recentPostsSection, recentMenuButton);
+  $('menu-recent').onclick = function() {
+    showSection($('recent-posts-list'), $('menu-recent'));
   };
-  myPostsMenuButton.onclick = function() {
-    showSection(userPostsSection, myPostsMenuButton);
+  $('menu-my-posts').onclick = function() {
+    showSection($('user-posts-list'), $('menu-my-posts'));
   };
-  myTopPostsMenuButton.onclick = function() {
-    showSection(topUserPostsSection, myTopPostsMenuButton);
+  $('menu-my-top-posts').onclick = function() {
+    showSection($('top-user-posts-list'), $('menu-my-top-posts'));
   };
-  addButton.onclick = function() {
-    showSection(addPost);
+  $('add-post').onclick = function() {
+    showSection($('add'));
     messageInput.value = '';
     titleInput.value = '';
   };
