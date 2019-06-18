@@ -15,6 +15,18 @@
  */
 'use strict';
 
+var firebaseConfig = {
+    apiKey: "AIzaSyBN31nZd44oUvOTJGCaLOiqrXF5VQ36zlE",
+    authDomain: "hackathon-project-44f1f.firebaseapp.com",
+    databaseURL: "https://hackathon-project-44f1f.firebaseio.com",
+    projectId: "hackathon-project-44f1f",
+    storageBucket: "hackathon-project-44f1f.appspot.com",
+    messagingSenderId: "444568735158",
+    appId: "1:444568735158:web:a9e0bfbb4f143e33"
+  };
+
+firebase.initializeApp(firebaseConfig);
+
 
 // Shortcuts to DOM Elements.
 var messageForm = document.getElementById('message-form');
