@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>hackathon</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="javascript" href="js/main.js">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="form-container" id="formContainer">
+    <div class="form" id="submitForm">
+      <h2>Submit an idea</h2>
+
+      <div class="name-element-container">
+        <div class="input-element" id="firstNameInput">
+          <h3>First Name</h3>
+          <input type="text" name="firstName" id="firstNameTextInput">
+        </div>
+        <div class="input-element" id="lastNameInput">
+          <h3>Last Name</h3>
+          <input type="text" name="lastName" id="lastNameTextInput">
+        </div>
+      </div>
+      <div class="input-element">
+        <h3>Imprivata Email</h3>
+        <input type="text" name="email" id="emailInput">
+      </div>
+      <div class="input-element">
+        <h3>Idea Name</h3>
+        <input type="text" name="ideaName" id="ideaNameInput">
+      </div>
+      <div class="input-element">
+        <h3>Idea Description Summary</h3>
+        <textarea name="text" rows="14" cols="10" wrap="soft" id="ideaSummaryInput"> </textarea>
+        <!-- <input type="text" name="roles" id="ideaSummaryInput"> -->
+      </div>
+
+      <div class="input-element">
+        <h3>Roles Needed (optional)</h3>
+        <button class="role-button" id="QAButton" style="opacity: .25;">
+          <p><strong>QA</strong></p>
+        </button>
+        <button class="role-button" id="EngineerButton" style="opacity: .25;">
+          <p><strong>Software Engineer</strong></p>
+        </button>
+        <button class="role-button" id="UXButton" style="opacity: .25;">
+          <p><strong>UX</strong></p>
+        </button>
+      </div>
+
+      <button class="button" id="submitIdeaButton">
+        <p style="margin: 0;"><strong>Create Project</strong></p>
+      </button>
+    </div>
+  </div>
+  <script>
+    $('#QAButton').on('click', function() {
+      if ($('#QAButton').css('opacity') == .25) {
+        $('#QAButton').css('opacity', 1);
+      } else {
+        $('#QAButton').css('opacity', .25);
+      }
+    });
+    $('#UXButton').on('click', function() {
+      if ($('#UXButton').css('opacity') == .25) {
+        $('#UXButton').css('opacity', 1);
+      } else {
+        $('#UXButton').css('opacity', .25);
+      }
+    });
+    $('#EngineerButton').on('click', function() {
+      if ($('#EngineerButton').css('opacity') == .25) {
+        $('#EngineerButton').css('opacity', 1);
+      } else {
+        $('#EngineerButton').css('opacity', .25);
+      }
+    });
+
+  </script>
+</body>
+
+</html>
