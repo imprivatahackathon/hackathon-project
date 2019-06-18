@@ -104,8 +104,7 @@ function createPostElement(postId, title, text, author, authorId, authorPic) {
   var uid = firebase.auth().currentUser.uid;
 
   var html =
-      '<div class="post post-' + postId + ' mdl-cell mdl-cell--12-col ' +
-                  'mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-grid mdl-grid--no-spacing">' +
+      '<div class="post post-' + postId + ' mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">' +
         '<div class="mdl-card mdl-shadow--2dp">' +
           '<div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">' +
             '<h4 class="mdl-card__title-text"></h4>' +
@@ -395,7 +394,6 @@ function newPostForCurrentUser(title, text) {
 /**
  * Displays the given section element and changes styling of the given button.
  */
-function showSection(sectionElement, buttonElement) {
   recentPostsSection.style.display = 'none';
   userPostsSection.style.display = 'none';
   topUserPostsSection.style.display = 'none';
@@ -418,6 +416,10 @@ window.addEventListener('load', function() {
   viewProjectsButton.addEventListener('click', function() {
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider);
+  });
+
+  submitAnIdeaButton.addEventListener('click', function() {
+
   });
 
   // Bind Sign out button.
