@@ -25,8 +25,9 @@ var firebaseConfig = {
     appId: "1:444568735158:web:a9e0bfbb4f143e33"
   };
 
-firebase.initializeApp(firebaseConfig);
-
+if (!firebase.apps.length) {
+     firebase.initializeApp(firebaseConfig);
+}
 
 // Shortcuts to DOM Elements.
 var messageForm = document.getElementById('message-form');
