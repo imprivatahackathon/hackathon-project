@@ -394,6 +394,7 @@ function newPostForCurrentUser(title, text) {
 /**
  * Displays the given section element and changes styling of the given button.
  */
+ function showSection(sectionElement, buttonElement)  {
   recentPostsSection.style.display = 'none';
   userPostsSection.style.display = 'none';
   topUserPostsSection.style.display = 'none';
