@@ -183,6 +183,14 @@ input.break {
   display: inline-flex;
 }
 
+#viewButton:hover svg path {
+  fill: white;
+}
+
+#submitIdea:hover svg path {
+  fill: var(--button-color);
+}
+
 #viewButton:hover{
   color: white;
   border-color: white;
@@ -190,7 +198,7 @@ input.break {
   cursor: pointer;
 }
 
-#submitIdeaButton:hover, #joinButton:hover, #viewButton:hover, #submitIdea:hover {
+#submitIdeaButton:hover, #joinButton:hover, #submitIdea:hover {
   color: var(--button-color);
   border-color: var(--button-color);
   background-color: white;
