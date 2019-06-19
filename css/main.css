@@ -107,6 +107,23 @@ input.break {
   display: block;
 }
 
+.profile-container  {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.button-list button {
+  margin: 0 10px 0 10px;
+}
+
+.profile-header {
+  margin-top: 3%;
+}
+
+.email-footer   {
+  margin-top: 3%;
+}
+
 #submitEmailButton  {
   float: right;
   background-color: var(--button-color);
@@ -166,6 +183,7 @@ input.break {
 #QAButton {
   border-color: red;
   color: red;
+  background-color: white;
 }
 
 #QAButton p {
@@ -180,6 +198,7 @@ input.break {
 #EngineerButton {
   border-color: purple;
   color: purple;
+  background-color: white;
 }
 
 #EngineerButton p {
@@ -193,10 +212,57 @@ input.break {
 
 #UXButton {
   border-color: orange;
+  color: orange;
+  background-color: white;
 }
 
 #UXButton p {
   color: orange;
+}
+
+#ProjectButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#ProjectButton {
+  border-color: red;
+  color: red;
+  background-color: white;
+}
+
+#ProjectButton p {
+  color: red;
+}
+
+#BackButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#BackButton {
+  border-color: yellow;
+  color: yellow;
+  background-color: white;
+}
+
+#BackButton p {
+  color: yellow;
+}
+
+#FrontButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#FrontButton {
+  border-color: green;
+  color: green;
+  background-color: white;
+}
+
+#FronButton p {
+  color: green;
 }
 
 button {
