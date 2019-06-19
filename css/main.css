@@ -214,3 +214,31 @@ button:focus {
   display: inline-flex;
   margin: 1.6875vw 0 0 5.6875vw;
 }
+
+.info-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.info-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.info-dropdown:hover .info-dropdown-content {display: block;}
+
+.info-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.info-dropdown-content a:hover {background-color: #ddd;}
+
+
