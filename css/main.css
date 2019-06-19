@@ -497,3 +497,7 @@ button:focus {
   text-align: center;
   padding: 0 19vw 2.5vh 19vw;
 }
+
+.project-details-page {
+  margin: 5vw;
+}
