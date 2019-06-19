@@ -107,6 +107,20 @@ input.break {
   display: block;
 }
 
+#submitEmailButton  {
+  float: right;
+  background-color: var(--button-color);
+  border-color: white;
+  color: white;
+}
+
+#submitEmailButton:hover  {
+  background-color: white;
+  border-color: var(--button-color);;
+  color: var(--button-color);
+  cursor: pointer;
+}
+
 #submitIdeaButton {
   float: right;
   border-color: white;
