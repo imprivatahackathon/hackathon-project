@@ -515,7 +515,7 @@ button:focus {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 20%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -531,7 +531,8 @@ button:focus {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 35%;
+  height: 25%;
 }
 
 /* The Close Button */
@@ -546,5 +547,19 @@ button:focus {
 .close:focus {
   color: #000;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.send-button {
+  float: right;
+  border-color: white;
+  color: white;
+  background-color: var(--button-color);
+}
+
+.send-button:hover {
+  color: var(--button-color);
+  border-color: var(--button-color);
+  background-color: white;
   cursor: pointer;
 }

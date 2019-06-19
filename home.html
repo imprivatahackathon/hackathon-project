@@ -217,10 +217,18 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Send an email to this project's coordinator to join their team. (Consider mentoring roles you are interested in/things you want to learn): </p>
-	<textarea>Hello [Name],
+    <h1>Join team</h1>
+	<p>Send an email to this project's coordinator to join their team. (Consider mentoring roles you are interested in/things you want to learn): </p>
+	<textarea rows="6" cols="90">Hello [Name],
+	
 	I'd like to join your team. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	
 	</textarea>
+	<div>
+	  <button class="send-button" id="sendButton">
+        <p onclick='modal.style.display = "none";'>Send</p>
+      </button>
+	</div>
   </div>
 
 </div>
