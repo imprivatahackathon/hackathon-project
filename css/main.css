@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration:none;
+}
+
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
@@ -15,16 +19,19 @@ p {
 h1 {
   font-family: 'Cabin', sans-serif;
   font-weight: normal;
+  font-size: 20px;
 }
 
 h2 {
   font-family: 'Cabin', sans-serif;
   font-weight: normal;
+  font-size: 16px;
 }
 
 h3 {
   font-family: 'Cabin', sans-serif;
   font-weight: normal;
+  font-size: 14px;
 }
 
 h4 {
@@ -138,7 +145,7 @@ input.break {
   cursor: pointer;
 }
 
-#submitIdeaButton {
+#submitIdeaButton, #joinButton {
   float: right;
   border-color: white;
   color: white;
@@ -159,7 +166,7 @@ input.break {
   height: 100px;
 }
 
-#submitIdeaButton:hover {
+#submitIdeaButton:hover, #joinButton:hover {
   color: var(--button-color);
   border-color: var(--button-color);
   background-color: white;
@@ -284,16 +291,6 @@ button:focus {
   outline: 0;
 }
 
-/* Project-page styling */
-
-.page-title {
-  margin: 1.6875vw 0 0 5.6875vw;
-}
-
-.project-list-label-container {
-  display: inline-flex;
-  margin: 1.6875vw 0 0 5.6875vw;
-}
 
 .info-dropdown {
   position: relative;
@@ -403,3 +400,54 @@ button:focus {
 	width: 90%;
 }
 
+/* Project-page styling */
+
+.page-title {
+  padding: 1.6875vw 0 00;
+  margin-left: 10.5vw;
+}
+
+.project-list-labels-container {
+  width: 80.5%;
+}
+
+.project-list-labels {
+  display: inline-flex;
+  padding: 1.6875vw 5.6875vw 0 5.6875vw;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.individual-project {
+  width: 90%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6875vw 5.6875vw 0.6875vw 5.6875vw;
+}
+
+#project-container1, #project-container3 {
+  background-color: #F9F8F8;
+}
+
+#project-container2, #project-container4 {
+  background-color: rgba(115, 115, 115, 0.13);
+}
+
+.individual-project-container {
+  width: inherit;
+  margin: 1vh 10.5vw 1vh 10.5vw;
+}
+
+.members-container ul li p {
+  color: #4d4d4d;
+}
+
+.svg-container {
+  margin-top: 5vh;
+  text-align:center;
+}
+
+.project-needs-container button {
+  opacity: 1;
+}
