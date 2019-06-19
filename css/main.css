@@ -338,3 +338,68 @@ button:focus {
   color: #FFFFFF;
 }
 
+.role-UX-icon {
+  border: 2px solid #6BD3F4;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+}
+
+.role-UX-icon-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #56CCF2;
+}
+
+.role-SE-icon {
+  border: 2px solid #6FCF97;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+}
+
+.role-SE-icon-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #6FCF97;;
+}
+
+.role-QA-icon {
+  border: 2px solid #2F80ED;
+  box-sizing: border-box;
+  border-radius: 1.5px;
+}
+
+.role-QA-icon-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #2F80ED;
+}
+
+.role-icon-container {
+  display: inline-flex;
+}
+
+.project-details-element-container {
+  display: block;
+}
+
+.whatever {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
