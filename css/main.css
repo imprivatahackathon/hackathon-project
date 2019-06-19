@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 p {
@@ -114,7 +114,7 @@ input.break {
   display: block;
 }
 
-.profile-container  {
+.profile-container {
   text-align: center;
   margin-top: 10%;
 }
@@ -127,29 +127,42 @@ input.break {
   margin-top: 3%;
 }
 
-.email-footer   {
+.email-footer {
   margin-top: 3%;
 }
 
-#submitEmailButton  {
+#submitEmailButton {
   float: right;
   background-color: var(--button-color);
   border-color: white;
   color: white;
 }
 
-#submitEmailButton:hover  {
+#submitEmailButton:hover {
   background-color: white;
-  border-color: var(--button-color);;
+  border-color: var(--button-color);
+  ;
   color: var(--button-color);
   cursor: pointer;
 }
 
-#submitIdeaButton, #joinButton {
+
+#viewButton {
+  float: right;
+  border-color: var(--button-color);
+  color: var(--button-color);
+  background-color: white;
+}
+
+#submitIdeaButton, #joinButton, #submitIdea {
   float: right;
   border-color: white;
   color: white;
   background-color: var(--button-color);
+}
+
+#viewButton, #submitIdea {
+  float: none;
 }
 
 #lastNameInput {
@@ -166,7 +179,18 @@ input.break {
   height: 100px;
 }
 
-#submitIdeaButton:hover, #joinButton:hover {
+#submitIdea, #viewButton {
+  display: inline-flex;
+}
+
+#viewButton:hover{
+  color: white;
+  border-color: white;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+#submitIdeaButton:hover, #joinButton:hover, #viewButton:hover, #submitIdea:hover {
   color: var(--button-color);
   border-color: var(--button-color);
   background-color: white;
@@ -188,13 +212,13 @@ input.break {
 }
 
 #QAButton {
-  border-color: red;
-  color: red;
+  border-color: #2F80ED;
+  color: #2F80ED;
   background-color: white;
 }
 
 #QAButton p {
-  color: red;
+  color: #2F80ED;
 }
 
 #EngineerButton:hover {
@@ -203,13 +227,13 @@ input.break {
 }
 
 #EngineerButton {
-  border-color: purple;
-  color: purple;
+  border-color: #6FCF97;
+  color: #6FCF97;
   background-color: white;
 }
 
 #EngineerButton p {
-  color: purple;
+  color: #6FCF97;
 }
 
 #UXButton:hover {
@@ -218,13 +242,13 @@ input.break {
 }
 
 #UXButton {
-  border-color: orange;
-  color: orange;
+  border-color: #56CCF2;
+  color: #56CCF2;
   background-color: white;
 }
 
 #UXButton p {
-  color: orange;
+  color: #56CCF2;
 }
 
 #ProjectButton:hover {
@@ -291,7 +315,6 @@ button:focus {
   outline: 0;
 }
 
-
 .info-dropdown {
   position: relative;
   display: inline-block;
@@ -304,7 +327,9 @@ button:focus {
   display: block;
 }
 
-.info-dropdown:hover .info-dropdown-content {display: block;}
+.info-dropdown:hover .info-dropdown-content {
+  display: block;
+}
 
 .info-dropdown-content {
   display: none;
@@ -312,11 +337,13 @@ button:focus {
   right: 0;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.info-dropdown-content a:hover {background-color: #ddd;}
+.info-dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 .join-button {
   background: #FFB34E;
@@ -331,7 +358,6 @@ button:focus {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-
   color: #FFFFFF;
 }
 
@@ -348,7 +374,6 @@ button:focus {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-
   color: #56CCF2;
 }
 
@@ -365,8 +390,8 @@ button:focus {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-
-  color: #6FCF97;;
+  color: #6FCF97;
+  ;
 }
 
 .role-QA-icon {
@@ -382,7 +407,6 @@ button:focus {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-
   color: #2F80ED;
 }
 
@@ -395,13 +419,12 @@ button:focus {
 }
 
 .whatever {
-	display: inline-flex;
-	justify-content: space-between;
-	width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 /* Project-page styling */
-
 .page-title {
   padding: 1.6875vw 0 00;
   margin-left: 10.5vw;
@@ -444,10 +467,33 @@ button:focus {
 }
 
 .svg-container {
-  margin-top: 5vh;
-  text-align:center;
+  margin: 5vh 10.5vw 1vh 10.5vw;
 }
 
 .project-needs-container button {
   opacity: 1;
+}
+
+.start-button-layout {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.welcome-header-container {
+  background-color: var(--accent-color);
+  height: 60%;
+}
+
+#title {
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  padding-top: 300px;
+  margin: 0;
+}
+
+#subtitle {
+  color: white;
+  text-align: center;
+  padding: 0 19vw 2.5vh 19vw;
 }
