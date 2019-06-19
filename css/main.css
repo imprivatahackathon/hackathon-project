@@ -255,4 +255,20 @@ button:focus {
 
 .info-dropdown-content a:hover {background-color: #ddd;}
 
+.join-button {
+  background: #FFB34E;
+  border-radius: 1.5px;
+  float: right;
+}
+
+.join-button-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
 
